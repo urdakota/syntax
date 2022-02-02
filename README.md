@@ -7,5 +7,5 @@ Make a new bookmark
 Name it whatever you want
 Paste this as the URL
 ```js
-javascript: fetch("https://raw.githubusercontent.com/urdakota/syntax/main/main.js").then((res) => res.text().then((t) => eval(t)))
+javascript: fetch("https://urdakota.github.io/syntax/main.js").then((res) => res.text().then((t) => eval(t)))
 ```
