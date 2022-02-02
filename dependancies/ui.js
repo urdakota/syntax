@@ -1,5 +1,4 @@
 console.log("-> Writing it right now");
-var UIconst = [];
 // inserting
  var doc = document;
  var bod = doc.body;
@@ -20,9 +19,12 @@ var UIconst = [];
   </style`
 
  // UI
- bod += `<div id="syntax" class = "holder"></div>`;
- var holder = doc.getElementById("syntax") 
-
- holder += `<h3 style="color: #fcba03; margin: 4px 0px 0px 4px">Syn<span style="color: #a6a6a6">tax</span></h3>`
-
+  var holder = doc.createElement("div", {id: "syntax", class: "holder"});
+  document.body.appendChild(holder);
+  var title = doc.createElement("h3",{style: "color: #fcb03; margin: 4px 0px 0px 4px"});
+  holder.appendChild(title);
+   title.innerText = "Syn";
+   var titlespan = doc.createElement("span",{style: "color: #a6a6a6"});
+   titlespan.innerText = "tax";
+   title.appendChild(titlespan);
 // scripting
