@@ -55,11 +55,14 @@ var bruh = [];
       width: 393px;
       border-left: none;
       height: 300px;
-      overflow: hidden
-    }
-    .tablinks {
-    
-    }
+      overflow: hidden;
+      animation: fadeEffect 1s
+  }
+
+  @keyframes fadeEffect {
+    from {opacity: 0;}
+    to {opacity: 1;}
+  }
 </style`
 
  // UI
@@ -114,7 +117,7 @@ var bruh = [];
       }
   }
   function openTab(evt, cityName) {
-      var i, tabcontent, tablinks;
+      let i, tabcontent, tablinks;
       tabcontent = document.getElementsByClassName("tabcontent");
       for (i = 0; i < tabcontent.length; i++) {
         tabcontent[i].style.display = "none";
@@ -143,7 +146,7 @@ var bruh = [];
      list.appendChild(btn);
      btn.setAttributeNode(createatt("id",name + "Btn"));
      btn.setAttributeNode(createatt("class","tablinks"));
-     btn.setAttributeNode(createatt("onclick",`openTab(event,${name})`));
+     btn.setAttributeNode(createatt("onclick","openTab(event," + name + ")"));
      btn.innerText = name;
     let tab = doc.createElement("div");
       holder.appendChild(tab);
@@ -153,5 +156,5 @@ var bruh = [];
     return tabtbl;
   };
   
- let HomeTab = bruh.tab("Homer");
- let creamTab = bruh.tab("Cream");
+ let HomeTab = bruh.tab("Home");
+ let CombatTab = bruh.tab("Combat");
