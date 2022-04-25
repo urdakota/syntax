@@ -1,4 +1,4 @@
-# Syntax
+# Syntax (PAUSED DEVELOPMENT!!!)
 Syntax is an open source bookmarklet that is made for school games such as: 
 ### Blooket, Gimkit, Kahoot, Edpuzzle, Quizizz
 
